@@ -1,0 +1,6 @@
+默认切片大小split=block块大小，一个split就是一个分区，多个partitions组成一个rdd
+rpc协议：rpc协议是分为以下三种情况调用，第一：同一主机同一进程 第二：同一主机不同进程   第三：不同主机不同进程
+netty可以提供两种接口，第一中是BIO阻塞式IO NIO非阻塞式IO
+rpc依赖netty传输通信
+
+Driver worker  等角色持有driver的RpcEndpointRef引用，调用send和ask方法与master通信
