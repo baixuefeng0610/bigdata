@@ -35,8 +35,22 @@ object Lesson02 {
   var i: Int = fun04(4)
   println(i)
 
-  println("-------4.匿名函数----------")
 
+
+  println("-------3.默认值函数----------")
+
+  def fun05(a: Int = 8, b: String = "abc"): Unit = {
+    println(s"$a\t$b")
+  }
+
+
+  println("-------4.匿名函数----------")
+  
+  var yy :(Int,Int)=>Int = (a:Int, b:Int)=>{
+    a + b
+  }
+  val w:Int=yy(3,4)
+  println(w)
 
 
 }

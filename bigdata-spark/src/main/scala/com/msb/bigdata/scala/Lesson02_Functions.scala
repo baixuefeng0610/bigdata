@@ -42,7 +42,7 @@ object Lesson02_Functions {
     }
 
     //参数：必须给出类型，是val
-    //class 构造，是var，val
+    //class 构造，是var，val，函数想要有返回，就需要在参数后加 := 即便有返回，但是最终的结果没有返回就是Unit类型的
     def fun03(a: Int): Unit = {
       println(a)
     }
@@ -80,6 +80,7 @@ object Lesson02_Functions {
     //2，匿名函数： (a:Int,b:Int) => { a+b }  ：（参数实现列表）=> 函数体
     var xx: Int = 3
 
+    //表示yy的类型(Int, Int) => Int
     var yy: (Int, Int) => Int = (a: Int, b: Int) => {
       a + b
     }

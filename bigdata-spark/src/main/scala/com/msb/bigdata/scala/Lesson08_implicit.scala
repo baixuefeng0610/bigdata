@@ -46,7 +46,7 @@ object Lesson08_implicit {
     listArray.foreach(println)
 
     //spark  RDD N方法 scala
-    //隐式转换类
+    //隐式转换类:在没有办法改变源码的情况下，且想要这个方法的某种实现
 //    implicit  class KKK[T](list:util.LinkedList[T]){
 //      def foreach( f:(T)=>Unit): Unit ={
 //        val iter: util.Iterator[T] = list.iterator()
@@ -69,6 +69,14 @@ object Lesson08_implicit {
     implicit val sdfsdfsd:String = "werwe"
 //    implicit val sdfsdfs:String = "wangwu"
     implicit val sssss:Int = 88
+
+    ///implicit 关键字在参数列表中，则这两个参数都必须是隐式转换，或者把两个参数都给默认值ooxx2("111".11)
+    def ooxx2()(implicit name:String, age:Int ): Unit ={
+      println(name+" "+age)
+    }
+    ooxx2
+
+
     def ooxx(age:Int)(implicit name:String ): Unit ={
       println(name+" "+age)
     }
