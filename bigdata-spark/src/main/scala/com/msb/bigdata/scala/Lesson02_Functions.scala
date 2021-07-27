@@ -25,6 +25,10 @@ object Lesson02_Functions {
 
     fun01()
     var x = 3
+
+
+
+    
     var y = fun01()
     println(y)
 
@@ -160,6 +164,7 @@ object Lesson02_Functions {
 
 
     println("--------9.柯里化---------")
+    //当每一个参数有明确的类型都得时候，可以使用柯里化
 
     def fun09(a: Int)(b: Int)(c: String): Unit = {
       println(s"$a\t$b\t$c")

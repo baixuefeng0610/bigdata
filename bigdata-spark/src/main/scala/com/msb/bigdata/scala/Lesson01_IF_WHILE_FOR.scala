@@ -49,13 +49,13 @@ object Lesson01_IF_WHILE_FOR {
 //        if(j == i ) println()
 //      }
 //    }
-    var num = 0
-    for(i <- 1 to 9;j <- 1 to 9 if(j<=i)){
-      num+=1
-        if(j<=i) print(s"$i * $j = ${i*j}\t")
-        if(j == i ) println()
-    }
-    println(num)
+//    var num = 0
+//    for(i <- 1 to 9;j <- 1 to 9 if(j<=i)){
+//      num+=1
+//        if(j<=i) print(s"$i * $j = ${i*j}\t")
+//        if(j == i ) println()
+//    }
+//    println(num)
 
     val seqss: immutable.IndexedSeq[Int] = for ( i <- 1 to 10) yield {
       var x = 8
